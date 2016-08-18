@@ -225,6 +225,8 @@ module.exports = class MdsMainMenu
                 MdsFileHistory.clear()
                 MdsMainMenu.updateMenuToAll()
                 @applyMenu()
+            if historyMenu.length > 0
+              historyMenu[0].accelerator = 'Shift+CmdOrCtrl+R'
 
             return historyMenu
 
