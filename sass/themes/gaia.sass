@@ -33,7 +33,6 @@ $highlight-color: #0288d1
 
   pre
     background-color: $text
-    background-image: linear-gradient(135deg, rgba(#000, 0), rgba(#000, .02) 50%, rgba(#fff, 0) 50%, rgba(#fff, .05))
 
     code
       background: transparent
@@ -71,7 +70,6 @@ $highlight-color: #0288d1
 
   .slide_wrapper
     > .slide
-      background-image: linear-gradient(135deg, rgba(#000, 0), rgba(#000, .02) 50%, rgba(#fff, 0) 50%, rgba(#fff, .05))
       padding: calc(0.1px * var(--slide-height)) calc(0.08px * var(--slide-width))
 
     &.only-headings, &.only-blockquotes
@@ -170,3 +168,6 @@ $highlight-color: #0288d1
 
     &[data-template~="gaia"]
       +color-template($highlight-color, $bg-color, #81d4fa)
+
+    &[data-template~="burnt"]
+      +color-template(hsl(10, 10%, 15%), hsl(40, 90%, 80%), hsl(200, 50%, 80%));
