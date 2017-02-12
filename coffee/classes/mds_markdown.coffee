@@ -32,7 +32,10 @@ module.exports = class MdsMarkdown
       'markdown-it-mark': {}
       'markdown-it-emoji':
         shortcuts: {}
-      'markdown-it-katex': {}
+      'markdown-it-katex': {},
+      'markdown-it-decorate': {},
+      'markdown-it-footnote': {},
+      'markdown-it-sup-alt': {}
 
     twemoji:
       base: Path.resolve(__dirname, '../../node_modules/twemoji/2') + Path.sep
