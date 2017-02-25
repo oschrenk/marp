@@ -8,12 +8,13 @@
 
 @import './markdown'
 @import '../../node_modules/highlight.js/styles/sunburst'
-@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900)
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700)
 
-$bg-color: #fff8e1
-$text-color: #455a64
-$highlight-color: #0288d1
+$bg-color: rgba(248, 249, 241, 1)
+$text-color: rgba(11, 11, 7, 1)
+$highlight-color: rgba(239, 100, 97, 1)
+$code-bg-color: rgba(25, 29, 50, 1)
 
 =color-template($bg, $text, $highlight)
   color: $text
@@ -28,7 +29,7 @@ $highlight-color: #0288d1
     color: $highlight
 
   code
-    background: rgba($text, .8)
+    background: rgba($code-bg-color, .8)
     color: $bg
 
   pre
@@ -78,6 +79,7 @@ $highlight-color: #0288d1
 
     h1, h2, h3, h5, h5
       font-weight: bold
+      font-family: "Adelle Basic"
 
     h1, h2, h3, h4, h5, h6
       margin: 0 0 .5em 0
